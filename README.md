@@ -7,7 +7,7 @@ A [Cartesian chart](https://www.syncfusion.com/maui-controls/maui-cartesian-char
 
 In this example, we will explore how to add images in the axis line for a Cartesian chart.
 
-![Custom axis](![Screenshot 2024-07-18 194725](https://github.com/user-attachments/assets/f588f79e-a4e4-4a0a-a143-c2a32389a450))
+![Custom Axis](https://github.com/user-attachments/assets/f588f79e-a4e4-4a0a-a143-c2a32389a450)
 
 ## Troubleshooting
 
