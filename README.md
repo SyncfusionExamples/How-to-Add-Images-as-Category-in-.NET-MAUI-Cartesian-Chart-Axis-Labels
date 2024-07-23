@@ -1,9 +1,10 @@
-# How-to-Add-Images-as-Category-in-.NET-MAUI-Cartesian-Chart-Axis-Labels
-Customize axis labels by extending the CategoryAxis class, overriding DrawAxis to iterate labels, bind them to ViewModel properties, and integrate associated image streams for dynamic visual enhancements in your charting application.
+# How to Add Images as Category in .NET MAUI Cartesian Chart Axis Labels
 
 **Cartesian Chart**
 
 A [Cartesian chart](https://www.syncfusion.com/maui-controls/maui-cartesian-charts) (or Cartesian coordinate chart) uses a rectangular coordinate system to plot data points on an X and Y axis. It is commonly used for displaying data in various formats, including line charts, bar charts, and scatter plots. The SfCartesianChart control from Syncfusion for .NET MAUI provides a flexible and powerful way to create these charts with various data visualization options.
+
+Cartesian chart provides the facility to customize the axes, allowing for tailored and specific presentations of data.
 
 In this example, we will explore how to add images in the axis line for a Cartesian chart.
 
