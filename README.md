@@ -14,4 +14,4 @@ In this example, we will explore how to add images in the axis line for a Cartes
 
 If you are facing a path too long exception when building this example project, close Visual Studio and rename the repository to short and build the project.
 
-For a step by step procedure, refer to the [image axis line KB article]().
+For a step by step procedure, refer to the [image axis line KB article](https://support.syncfusion.com/kb/article/16794/how-to-add-images-as-category-in-net-maui-cartesian-chart-axis-labels?isInternalRefresh=False).
