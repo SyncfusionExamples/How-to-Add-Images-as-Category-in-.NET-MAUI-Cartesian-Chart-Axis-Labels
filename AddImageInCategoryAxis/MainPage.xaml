@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:chart="clr-namespace:Syncfusion.Maui.Charts;assembly=Syncfusion.Maui.Charts"
+             xmlns:local="clr-namespace:AddImageInCategoryAxis"
+             x:Class="AddImageInCategoryAxis.MainPage">
+
+    <chart:SfCartesianChart BackgroundColor="White" >
+
+        <chart:SfCartesianChart.BindingContext>
+            <local:DataViewModel/>
+        </chart:SfCartesianChart.BindingContext>
+
+        <chart:SfCartesianChart.Title>
+            <Label Text="Leading Countries by Tourist Arrivals" Margin="30,30,0,10"
+                   FontSize="26" HorizontalOptions="Center" 
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   />
+        </chart:SfCartesianChart.Title>
+
+        <chart:SfCartesianChart.XAxes>
+            <local:CustomCategoryAxis LabelsIntersectAction="None" ShowMajorGridLines="False">
+                <local:CustomCategoryAxis.MajorGridLineStyle>
+                    <chart:ChartLineStyle Stroke="White" StrokeWidth="2"/>
+                </local:CustomCategoryAxis.MajorGridLineStyle>
+                <local:CustomCategoryAxis.LabelStyle>
+                    <chart:ChartAxisLabelStyle TextColor="Black"/>
+                </local:CustomCategoryAxis.LabelStyle>
+                <local:CustomCategoryAxis.AxisLineStyle>
+                    <chart:ChartLineStyle Stroke="Black" StrokeWidth="1"/>
+                </local:CustomCategoryAxis.AxisLineStyle>
+                
+            </local:CustomCategoryAxis>
+            
+        </chart:SfCartesianChart.XAxes>
+
+        <chart:SfCartesianChart.YAxes>
+            <chart:NumericalAxis Maximum="800" Minimum="0" Interval="100"   >
+                <chart:NumericalAxis.LabelStyle>
+                    <chart:ChartAxisLabelStyle TextColor="Black"/>
+                </chart:NumericalAxis.LabelStyle>
+                <chart:NumericalAxis.AxisLineStyle>
+                    <chart:ChartLineStyle Stroke="Black" StrokeWidth="1"/>
+                </chart:NumericalAxis.AxisLineStyle>
+                <chart:NumericalAxis.MajorTickStyle>
+                    <chart:ChartAxisTickStyle Stroke="Black" StrokeWidth="1"/>
+                </chart:NumericalAxis.MajorTickStyle>
+            </chart:NumericalAxis>
+        </chart:SfCartesianChart.YAxes>
+
+        <chart:SfCartesianChart.ZoomPanBehavior>
+            <chart:ChartZoomPanBehavior EnablePanning="True"/>
+        </chart:SfCartesianChart.ZoomPanBehavior>
+
+        <chart:ColumnSeries ItemsSource="{Binding Data}"
+                            XBindingPath="Country"
+                            YBindingPath="Vists"
+                            PaletteBrushes="{Binding CustomBrush}" Stroke="Black" StrokeWidth="1"/>
+        
+    </chart:SfCartesianChart>
+
+</ContentPage>
